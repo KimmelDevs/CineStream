@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Movie Poster ImageView -->
+
+    <!-- Star ImageView for rating -->
+
+    <!-- Movie Rating TextView -->
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/star_full"
+        app:layout_constraintEnd_toStartOf="@+id/movieRating"
+        app:layout_constraintTop_toBottomOf="@+id/moviePoster" />
+
+    <TextView
+        android:id="@+id/movieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="0.0"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/star1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/star1"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

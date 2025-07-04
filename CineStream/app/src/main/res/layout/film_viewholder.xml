@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#666666">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titletxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/img"
+        app:layout_constraintStart_toStartOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titletxt"
+        app:layout_constraintTop_toBottomOf="@+id/titletxt"
+        app:srcCompat="@drawable/star_ratings"
+        app:tint="@color/yellow" />
+
+    <ImageView
+        android:id="@+id/clickfav_film"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/titletxt"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/titletxt"
+        tools:src="@drawable/fav_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

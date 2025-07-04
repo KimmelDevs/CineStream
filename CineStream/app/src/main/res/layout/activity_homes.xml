@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".viewpager.HomesActivity">
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ViewPager2 for page swiping -->
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <!-- TabLayout below ViewPager2 -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

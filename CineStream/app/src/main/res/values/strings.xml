@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CineStream</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_started_ndiscover_and_manage_n_your_favorite_movies">\'Get started\'\nDiscover and manage\n your favorite movies</string>
+    <string name="cinestream">CineStream</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="title">title</string>
+    <string name="link">Link:</string>
+    <string name="_0">0</string>
+    <string name="summary">Summary</string>
+    <string name="test">test</string>
+    <string name="genre">Genre</string>
+    <string name="actors">Actors</string>
+    <string name="Cinestream">CineStream</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="floating_action_button_description" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

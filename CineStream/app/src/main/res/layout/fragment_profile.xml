@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/brown">
+
+    <!-- Profile Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/profile" /> <!-- Replace with your profile image -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurt Bestudio"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kurtbestudio716@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Account Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+
+    </LinearLayout>
+
+    <!-- Setting Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/change_password_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change password"
+            android:backgroundTint="@color/gray"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@color/gray"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
